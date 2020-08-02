@@ -1,5 +1,5 @@
 # main text of home
-name: Karla Mejía
+name: Karla Mejia
 bio: Researcher, Biostatistician, Data Scientist
 
 # twitter summary info
@@ -60,7 +60,7 @@ authors:
 #    picture: assets/images/profile.jpg
 #    twitter: johndoe
   karlamejia:
-    name: Karla Mejía
+    name: Karla Mejia
     bio: Researcher, Data Scientist, Biostatistician
     external-image: false
     picture: assets/images/back-of-my-head.jpg
