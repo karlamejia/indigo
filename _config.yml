@@ -12,9 +12,9 @@ picture: assets/images/back-of-my-head.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+#resume: true
+#resume-external: true
+#resume-url: https://google.com/?q=my+resume
 
 url: https://karlamejia.github.io
 # your url: https://USERNAME.github.io
