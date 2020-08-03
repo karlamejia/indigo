@@ -32,7 +32,8 @@ The next step is to write Python code to automate our interaction with the dashb
 
 Notice that the history of total tests performed and the daily case counts reported are only visible after clicking the "History" tab in the "Total Numbers of Tests Performed at County Sites" panel and the "Daily Case Count" tab in the "Confirmed Cases" panel, respectively. This means that we need to write Python code that automatically clicks on the "History" and "Daily Case Count" tabs so that the history of total tests performed and the daily case counts reported will be visible to Beautiful Soup.
 
-
+![Markdowm Image][5]
+<figcaption class="caption">Photo by John Doe</figcaption>
 
 To find the HTML element that contains the "History" tab, use the shortcut Ctrl+Shift+C and then click on the "History" tab. You will see in the source code panel that the "History" tab is in a div element with ID "ember208".
 
@@ -85,29 +86,8 @@ Now, we can finally estimate the COVID-19 positivity rate in Fort Bend County. W
 {% gist karlamejia/1267eb47a172e32982c13a809890514a %}
 
 ## Sources
-1. https://www.fbchealth.org/ncov/
-2. https://www.fortbendcountytx.gov/your-county/fort-bend-county-expands-covid-19-testing-site-to-all-residents
-3. https://gov.texas.gov/news/post/governor-abbott-announces-phase-one-to-open-texas-establishes-statewide-minimum-standard-health-protocols
-4. https://gov.texas.gov/news/post/governor-abbott-announces-phase-two-to-open-texas
-5. https://gov.texas.gov/news/post/governor-abbott-announces-phase-iii-to-open-texas
-
-Markdown can also contain images. I'll need to add something here sometime.
-
-{% highlight raw %}
-![Markdowm Image][/image/url]
-<figcaption class="caption">Photo by John Doe</figcaption>
-{% endhighlight %}
-
-![Markdowm Image][5]
-<figcaption class="caption">Photo by John Doe</figcaption>
-
-*Bigger Images*?
-
-{% highlight raw %}
-![Markdowm Image][/image/url]{: class="bigger-image" }
-{% endhighlight %}
-
-![Markdowm Image][5]{: class="bigger-image" }
-
----
-
+1. [https://www.fbchealth.org/ncov/](https://www.fbchealth.org/ncov/)
+2. [https://www.fortbendcountytx.gov/your-county/fort-bend-county-expands-covid-19-testing-site-to-all-residents](https://www.fortbendcountytx.gov/your-county/fort-bend-county-expands-covid-19-testing-site-to-all-residents)
+3. [https://gov.texas.gov/news/post/governor-abbott-announces-phase-one-to-open-texas-establishes-statewide-minimum-standard-health-protocols](https://gov.texas.gov/news/post/governor-abbott-announces-phase-one-to-open-texas-establishes-statewide-minimum-standard-health-protocols)
+4. [https://gov.texas.gov/news/post/governor-abbott-announces-phase-two-to-open-texas](https://gov.texas.gov/news/post/governor-abbott-announces-phase-two-to-open-texas)
+5. [https://gov.texas.gov/news/post/governor-abbott-announces-phase-iii-to-open-texas](https://gov.texas.gov/news/post/governor-abbott-announces-phase-iii-to-open-texas)
