@@ -57,19 +57,19 @@ Now, we need to parse the HTML source code to extract the history of total tests
 
 To find the div element that contains the history of total tests performed, use the ``Ctrl+Shift+C`` shortcut and then click in the general area of the "Testing Sites" plot. You will see in the source code that the entire plot is in the div element with ID "ember96".
 
-
+![Source Code of Testing Sites Plot](/assets/images/history-plot.png)
 
 If you hover over a specific data point, a label containing the date and number of tests performed will appear. Use the ``Ctrl+Shift+C`` shortcut and click on a specific data point. You will see that the label text is stored as the aria-label attribute of a g element.
 
-
+![Source Code of Testing Sites Data Labels](/assets/images/history-label.png)
 
 Following the same steps for the daily case counts reported, you will see that the plot of daily case counts is in the div element with ID "ember143".
 
-
+![Source Code of Daily Cases Based on Report Date Plot](/assets/images/daily-case-count-plot.png)
 
 If you hover over a specific data point, a label containing the date and the number of positive cases reported will appear. Using the ``Ctrl+Shift+C`` shortcut, you will notice that the data are also stored in the aria-label attribute of g elements.
 
-
+![Source Code of Daily Cases based on Report Date Data Labels](/assets/images/daily-case-count-label.png)
 
 Once we have the elements that contain the data, we can write code that:
 
@@ -83,6 +83,8 @@ Once we have the elements that contain the data, we can write code that:
 Now, we can finally estimate the COVID-19 positivity rate in Fort Bend County. We will divide the cases reported by the tests performed and calculate the 7-day moving averages. It is unclear from the dashboard whether the reported positive cases include cases that were determined through tests not conducted by the county (e.g. tests conducted at a hospital or clinic). It is also unclear when the tests for the positive cases were conducted since the dashboard only displays the reported case date. That is why the positivity rates derived from these data are only considered a proxy for the true positivity rate.
 
 {% gist karlamejia/1267eb47a172e32982c13a809890514a %}
+
+![Plot of Total Cases, Total Tests, and Positivity Rate in Fort Bend County](/assets/images/final-plot.png)
 
 ## Sources
 1. [https://www.fbchealth.org/ncov/](https://www.fbchealth.org/ncov/)
