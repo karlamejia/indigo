@@ -5,8 +5,9 @@ date: 2020-08-01
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- web scraping
+- data science
+- data analytics
 star: true
 category: blog
 author: karlamejia
@@ -20,7 +21,9 @@ Our goal is to scrape the [Fort Bend County Community Impact Dashboard](https://
 Note that all of the code in this tutorial is written in Python version 3.6.2.
 
 ## Step 1: Import Python Packages, Modules and Methods
+The first step is to import the Python packages, modules, and methods needed for dashboard scraping. The versions of the packages used in this tutorial are listed below.
 
+{% gist karlamejia/1e4be87d46bb6eea116bd8aa66c61a2c %}
 
 
 ## Step 2: Scrape HTML Source Code
