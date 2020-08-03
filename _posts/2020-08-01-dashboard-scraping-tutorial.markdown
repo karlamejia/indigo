@@ -35,15 +35,20 @@ Notice that the history of total tests performed and the daily case counts repor
 ![Fort Bend County Community Impact Dashboard on July 10th, 2020](/assets/images/dashboard-overview.png)
 <figcaption class="caption">Fort Bend County Community Impact Dashboard on July 10th, 2020</figcaption>
 
+
 To find the HTML element that contains the "History" tab, use the shortcut ``Ctrl+Shift+C`` and then click on the "History" tab. You will see in the source code panel that the "History" tab is in a div element with ID "ember208".
 
 ![History Tab Source Code](/assets/images/history-html.png)
 <figcaption class="caption">History Tab Source Code</figcaption>
 
+
+
 Following the same steps for the "Daily Case Count" tab, you will see that the "Daily Case Count" tab is in a div element with ID "ember238".
 
 ![Source Code of Daily Case Count Tab](/assets/images/daily-case-count-html.png)
 <figcaption class="caption">Source Code of Daily Case Count Tab</figcaption>
+
+
 
 Now that we have identified the elements we need, we can write code that:
 
