@@ -28,14 +28,14 @@ The first step is to import the Python packages, modules, and methods needed for
 {% gist karlamejia/8072efd27ed8528941c4c62fa39e6cf9 %}
 
 ## Step 2: Scrape HTML Source Code
-The next step is to write Python code to automate our interaction with the dashboard. Before writing any code, we must look at the dashboard and inspect the source code to identify the HTML elements that contain the data we need. The dashboard source code refers to the HTML code that tells your browser how to render the dashboard web page. To view the dashboard source code, navigate to the dashboard and use the keyboard shortcut Ctrl+Shift+I. An interactive panel containing the dashboard source code will appear.
+The next step is to write Python code to automate our interaction with the dashboard. Before writing any code, we must look at the dashboard and inspect the source code to identify the HTML elements that contain the data we need. The dashboard source code refers to the HTML code that tells your browser how to render the dashboard web page. To view the dashboard source code, navigate to the dashboard and use the keyboard shortcut ``Ctrl+Shift+I``. An interactive panel containing the dashboard source code will appear.
 
 Notice that the history of total tests performed and the daily case counts reported are only visible after clicking the "History" tab in the "Total Numbers of Tests Performed at County Sites" panel and the "Daily Case Count" tab in the "Confirmed Cases" panel, respectively. This means that we need to write Python code that automatically clicks on the "History" and "Daily Case Count" tabs so that the history of total tests performed and the daily case counts reported will be visible to Beautiful Soup.
 
 ![Markdowm Image][5]
 <figcaption class="caption">Photo by John Doe</figcaption>
 
-To find the HTML element that contains the "History" tab, use the shortcut Ctrl+Shift+C and then click on the "History" tab. You will see in the source code panel that the "History" tab is in a div element with ID "ember208".
+To find the HTML element that contains the "History" tab, use the shortcut ``Ctrl+Shift+C`` and then click on the "History" tab. You will see in the source code panel that the "History" tab is in a div element with ID "ember208".
 
 
 
@@ -56,11 +56,11 @@ Launches the dashboard in Chrome
 ## Step 3: Parse Data from HTML
 Now, we need to parse the HTML source code to extract the history of total tests performed and the daily case counts reported. We will begin by looking at the dashboard source code to identify the HTML elements that contain the data.
 
-To find the div element that contains the history of total tests performed, use the Ctrl+Shift+C shortcut and then click in the general area of the "Testing Sites" plot. You will see in the source code that the entire plot is in the div element with ID "ember96".
+To find the div element that contains the history of total tests performed, use the ``Ctrl+Shift+C`` shortcut and then click in the general area of the "Testing Sites" plot. You will see in the source code that the entire plot is in the div element with ID "ember96".
 
 
 
-If you hover over a specific data point, a label containing the date and number of tests performed will appear. Use the Ctrl+Shift+C shortcut and click on a specific data point. You will see that the label text is stored as the aria-label attribute of a g element.
+If you hover over a specific data point, a label containing the date and number of tests performed will appear. Use the ``Ctrl+Shift+C`` shortcut and click on a specific data point. You will see that the label text is stored as the aria-label attribute of a g element.
 
 
 
@@ -68,7 +68,7 @@ Following the same steps for the daily case counts reported, you will see that t
 
 
 
-If you hover over a specific data point, a label containing the date and the number of positive cases reported will appear. Using the Ctrl+Shift+C shortcut, you will notice that the data are also stored in the aria-label attribute of g elements.
+If you hover over a specific data point, a label containing the date and the number of positive cases reported will appear. Using the ``Ctrl+Shift+C`` shortcut, you will notice that the data are also stored in the aria-label attribute of g elements.
 
 
 
