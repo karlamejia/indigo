@@ -6,7 +6,7 @@ layout: page
 
 <p>I'm a researcher and data scientist at MIT.</p>
 
-<p>I've always been fascinated by making sense of the world. I studied philosophy, economics, and mathematics at The University of Texas in Austin in my quest to learn the secret sauce for understanding the world. After graduating, I learned the hell outta SQL as a technical consultant at Quorum Software and then as a data analyst at Comlinkdata.</p>
+<p>I've always been fascinated with making sense of the world. I studied philosophy, economics, and mathematics at The University of Texas in Austin in my quest to learn the secret sauce for understanding the world. After graduating, I learned the hell outta SQL as a technical consultant at Quorum Software and then as a data analyst at Comlinkdata.</p>
 
 <p>There's nothing like working with messy data in the real world to make you painfully aware of your limited understanding of statistics. So, I decided to rectify the situation by getting an MS in biostatistics from Harvard where I used Google Search data to predict flu outbreaks in African countries for my master's thesis. </p>
 
