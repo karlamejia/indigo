@@ -50,6 +50,7 @@ Launches the dashboard in Chrome
 3. Extracts the dashboard HTML source code
 4. Exits Chrome
 
+{% gist karlamejia/80d53775f7d8670f1c38bae3281195d7 %}
 
 ## Step 3: Parse Data from HTML
 Now, we need to parse the HTML source code to extract the history of total tests performed and the daily case counts reported. We will begin by looking at the dashboard source code to identify the HTML elements that contain the data.
@@ -76,11 +77,12 @@ Once we have the elements that contain the data, we can write code that:
 2. Finds the div element that contains the plot of the daily case counts and pulls the daily case count data
 3. Combines the data in a pandas dataframe and exports it to a CSV
 
+{% gist karlamejia/595af92b82578c659d9e9ce0b2757174 %}
 
 ## Step 4: Calculate Positivity Rate
 Now, we can finally estimate the COVID-19 positivity rate in Fort Bend County. We will divide the cases reported by the tests performed and calculate the 7-day moving averages. It is unclear from the dashboard whether the reported positive cases include cases that were determined through tests not conducted by the county (e.g. tests conducted at a hospital or clinic). It is also unclear when the tests for the positive cases were conducted since the dashboard only displays the reported case date. That is why the positivity rates derived from these data are only considered a proxy for the true positivity rate.
 
-
+{% gist karlamejia/1267eb47a172e32982c13a809890514a %}
 
 ## Sources
 1. https://www.fbchealth.org/ncov/
