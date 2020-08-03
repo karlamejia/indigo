@@ -25,21 +25,69 @@ The first step is to import the Python packages, modules, and methods needed for
 
 {% gist karlamejia/1e4be87d46bb6eea116bd8aa66c61a2c %}
 
+{% gist karlamejia/8072efd27ed8528941c4c62fa39e6cf9 %}
 
 ## Step 2: Scrape HTML Source Code
+The next step is to write Python code to automate our interaction with the dashboard. Before writing any code, we must look at the dashboard and inspect the source code to identify the HTML elements that contain the data we need. The dashboard source code refers to the HTML code that tells your browser how to render the dashboard web page. To view the dashboard source code, navigate to the dashboard and use the keyboard shortcut Ctrl+Shift+I. An interactive panel containing the dashboard source code will appear.
 
+Notice that the history of total tests performed and the daily case counts reported are only visible after clicking the "History" tab in the "Total Numbers of Tests Performed at County Sites" panel and the "Daily Case Count" tab in the "Confirmed Cases" panel, respectively. This means that we need to write Python code that automatically clicks on the "History" and "Daily Case Count" tabs so that the history of total tests performed and the daily case counts reported will be visible to Beautiful Soup.
+
+
+
+To find the HTML element that contains the "History" tab, use the shortcut Ctrl+Shift+C and then click on the "History" tab. You will see in the source code panel that the "History" tab is in a div element with ID "ember208".
+
+
+
+Following the same steps for the "Daily Case Count" tab, you will see that the "Daily Case Count" tab is in a div element with ID "ember238".
+
+
+
+Now that we have identified the elements we need, we can write code that:
+
+Launches the dashboard in Chrome
+1. Clicks on the "History" tab once the "History" tab finishes loading
+2. Clicks on the "Daily Case Count" tab once the "Daily Case Count" tab finishes loading
+3. Extracts the dashboard HTML source code
+4. Exits Chrome
 
 
 ## Step 3: Parse Data from HTML
+Now, we need to parse the HTML source code to extract the history of total tests performed and the daily case counts reported. We will begin by looking at the dashboard source code to identify the HTML elements that contain the data.
 
+To find the div element that contains the history of total tests performed, use the Ctrl+Shift+C shortcut and then click in the general area of the "Testing Sites" plot. You will see in the source code that the entire plot is in the div element with ID "ember96".
+
+
+
+If you hover over a specific data point, a label containing the date and number of tests performed will appear. Use the Ctrl+Shift+C shortcut and click on a specific data point. You will see that the label text is stored as the aria-label attribute of a g element.
+
+
+
+Following the same steps for the daily case counts reported, you will see that the plot of daily case counts is in the div element with ID "ember143".
+
+
+
+If you hover over a specific data point, a label containing the date and the number of positive cases reported will appear. Using the Ctrl+Shift+C shortcut, you will notice that the data are also stored in the aria-label attribute of g elements.
+
+
+
+Once we have the elements that contain the data, we can write code that:
+
+1. Finds the div element that contains the plot of the total tests performed and pulls the total tests performed data
+2. Finds the div element that contains the plot of the daily case counts and pulls the daily case count data
+3. Combines the data in a pandas dataframe and exports it to a CSV
 
 
 ## Step 4: Calculate Positivity Rate
+Now, we can finally estimate the COVID-19 positivity rate in Fort Bend County. We will divide the cases reported by the tests performed and calculate the 7-day moving averages. It is unclear from the dashboard whether the reported positive cases include cases that were determined through tests not conducted by the county (e.g. tests conducted at a hospital or clinic). It is also unclear when the tests for the positive cases were conducted since the dashboard only displays the reported case date. That is why the positivity rates derived from these data are only considered a proxy for the true positivity rate.
 
 
 
-
-## Images
+## Sources
+1. https://www.fbchealth.org/ncov/
+2. https://www.fortbendcountytx.gov/your-county/fort-bend-county-expands-covid-19-testing-site-to-all-residents
+3. https://gov.texas.gov/news/post/governor-abbott-announces-phase-one-to-open-texas-establishes-statewide-minimum-standard-health-protocols
+4. https://gov.texas.gov/news/post/governor-abbott-announces-phase-two-to-open-texas
+5. https://gov.texas.gov/news/post/governor-abbott-announces-phase-iii-to-open-texas
 
 Markdown can also contain images. I'll need to add something here sometime.
 
