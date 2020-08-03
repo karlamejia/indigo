@@ -32,7 +32,7 @@ The next step is to write Python code to automate our interaction with the dashb
 
 Notice that the history of total tests performed and the daily case counts reported are only visible after clicking the "History" tab in the "Total Numbers of Tests Performed at County Sites" panel and the "Daily Case Count" tab in the "Confirmed Cases" panel, respectively. This means that we need to write Python code that automatically clicks on the "History" and "Daily Case Count" tabs so that the history of total tests performed and the daily case counts reported will be visible to Beautiful Soup.
 
-![Fort Bend County Community Impact Dashboard on July 10th, 2020][/assets/images/dashboard-overview.png] 
+![Fort Bend County Community Impact Dashboard on July 10th, 2020](/assets/images/dashboard-overview.png)
 <figcaption class="caption">Fort Bend County Community Impact Dashboard on July 10th, 2020</figcaption>
 
 To find the HTML element that contains the "History" tab, use the shortcut ``Ctrl+Shift+C`` and then click on the "History" tab. You will see in the source code panel that the "History" tab is in a div element with ID "ember208".
