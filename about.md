@@ -6,7 +6,7 @@ layout: page
 
 <p>I'm a researcher and data scientist at MIT.</p>
 
-<p>I've always been fascinated with making sense of the world. I studied philosophy, economics, and mathematics at The University of Texas in Austin. After graduating, I worked as a technical consultant at Quorum Software and then as a data analyst at Comlinkdata. In 2019, I obtained an MS in biostatistics from Harvard where I wrote my master's thesis on using Google Searches to predict flu outbreaks in African countries. </p>
+<p>I studied philosophy, economics, and mathematics at The University of Texas in Austin because I've always been fascinated with making sense of the world. After graduating, I gained experience working with real-world data as a technical consultant at Quorum Software and then as a data analyst at Comlinkdata. In 2019, I obtained an MS in biostatistics from Harvard where I wrote my master's thesis on using Google Searches to predict flu outbreaks in African countries. </p>
 
 <h2>Skills</h2>
 
