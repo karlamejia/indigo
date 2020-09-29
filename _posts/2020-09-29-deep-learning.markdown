@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Day 1 of Deep Learning"
 layout: post
 date: 2020-09-29
 image: /assets/images/markdown.jpg
