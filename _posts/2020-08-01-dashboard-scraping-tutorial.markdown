@@ -8,7 +8,7 @@ tag:
 - web scraping
 - data science
 - data analytics
-star: true
+star: false
 category: blog
 author: karlamejia
 description: We’re going to learn how to scrape data from a dashboard using the Selenium and Beautiful Soup packages in Python.
