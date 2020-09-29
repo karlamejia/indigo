@@ -12,6 +12,7 @@ star: true
 category: blog
 author: karlamejia
 description: We’re going to learn how to scrape data from a dashboard using the Selenium and Beautiful Soup packages in Python.
+externalLink: true
 ---
 
 Dashboard scraping is a useful skill to have when the only way to interact with the data you need is through a dashboard. We're going to learn how to scrape data from a dashboard using the [Selenium](https://selenium-python.readthedocs.io/) and [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) packages in Python. The Selenium package allows you to write Python code to automate web browser interaction, and the Beautiful Soup package allows you to easily pull data from the HTML code that produces the webpage you want to scrape.
