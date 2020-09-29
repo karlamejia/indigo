@@ -16,7 +16,7 @@ I decided to start learning about deep learning because I want to understand the
 
 | Term                   | Definition |
 |:-----------------------|:-----------|
-| Artificial Intelligence (AI) |  AI is a field devoted to the creation and understanding of intelligent software. |
+| Artificial Intelligence |  AI is a field devoted to the creation and understanding of intelligent software. |
 | Deep Learning                | DL is an approach to AI focused on creating software that allows computers to learn from experience. In other words, computers rely on a hierarchy of concepts to learn complicated concepts by building on simpler concepts. |
 | Machine Learning             | ML is an approach to AI focused on creating algorithms that can extract patterns from data. In other words, the algorithm can find the mapping between the representation of the data and the output of interest. |
 | Representation Learning      | An ML approach that finds both the mapping and the representation. |
