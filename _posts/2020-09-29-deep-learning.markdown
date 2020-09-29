@@ -10,6 +10,7 @@ star: true
 category: blog
 author: karlamejia
 description: Day 1 - My thoughts on the intro of Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+externalLink: false
 ---
 
 I decided to start learning about deep learning because I want to understand the deep learning people I work with. I'm going to use this blog to document my thoughts as I go through the Deep Learning textbook by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. I've only looked at the intro so far, and it has already clarified a lot of terms that are frequently thrown around at work. 
