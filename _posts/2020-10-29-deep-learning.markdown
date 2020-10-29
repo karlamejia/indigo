@@ -14,4 +14,4 @@ externalLink: false
 ---
 
 The second chapter provides a very brief overview of linear algebra and points the reader to additional resources for more depth. I appreciate the way the authors
-tied the physical meaning to the terminology (e.g., vectors, matrices, eigenvectors, and eigenvalues). 
+tied the physical meaning to the terminology (e.g., vectors, matrices, eigenvectors, and eigenvalues) rather than relying on mathematical proofs. 
