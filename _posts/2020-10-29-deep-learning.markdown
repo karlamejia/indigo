@@ -9,7 +9,7 @@ tag:
 star: true
 category: blog
 author: karlamejia
-description: Day 2 - Linear Algebra Review
+description: Day 2 - Chapter 2 of Deep Learning by Ian Goodfellos, Yoshua Bengio, and Aaron Courville.
 externalLink: false
 ---
 
