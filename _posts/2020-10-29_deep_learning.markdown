@@ -1,7 +1,7 @@
 ---
 title: "Day 2 of Deep Learning"
 layout: post
-date: 2020-09-29
+date: 2020-10-29
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
